@@ -34,11 +34,18 @@ This project ia built and tested with the following dependencies:
 
 ## Running Tests
 
+* Create the Android Emulator and start it from Android Studio.
+  * You can get the UDID of emulator with the following adb command `adb shell "dumpsys window | grep -E mCurrentFocus"`
+* Clone the repo
 * Open the project `POM.xml` in IDE of your choice and run the maven build that will download and install the required dependencies.
   * IntelliJ IDE is recommended.
 * Configure the following according to your system setup:
   * appium server host and port inside `src/test/resources/server.properties`
   * android UDID of the emulator inside `src/test/resources/android.properties`
+* Start the Appium server with uiautomator2 driver for android via terminal:
+```shell
+appium --use-drivers=uiautomator2
+```
 * Use IDE Terminal or navigate to the project root directory and run following command in terminal:
 ```shell
 mvn clean test -Pregression
