@@ -1,0 +1,10 @@
+{
+  "validUser": {
+    "email": "qatest@wundermobility.com",
+    "password": "12345678"
+  },
+  "invalidUser": {
+    "email": "invalid@wundermobility.com",
+    "password": "12345678"
+  }
+}

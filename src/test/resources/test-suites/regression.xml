@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="QATest Wunder Mobility app" verbose="1" configfailurepolicy="continue">
+    <test name="Android tests" enabled="true">
+        <classes>
+            <class name="com.itkhanz.tests.LoginTest">
+                <methods>
+                    <include name="test_login_with_incorrect_credentials"/>
+                    <include name="test_login_with_correct_credentials"/>
+                </methods>
+            </class>
+            <class name="com.itkhanz.tests.VehicleListTest">
+                <methods>
+                    <include name="test_vehicle_details_in_list"/>
+                </methods>
+            </class>
+            <class name="com.itkhanz.tests.VehicleLocateTest">
+                <methods>
+                    <include name="test_locate_selected_vehicle_button_disabled"/>
+                    <include name="test_selected_vehicle_details"/>
+                    <include name="test_selected_vehicle_details_closing"/>
+                    <include name="test_locate_selected_vehicle_button_navigation"/>
+                </methods>
+            </class>
+            <class name="com.itkhanz.tests.VehicleRentTest">
+                <methods>
+                    <include name="test_vehicle_rent_ride_count"/>
+                    <include name="test_vehicle_rent_ride_count_multiple_rides"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
