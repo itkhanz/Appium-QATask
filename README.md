@@ -5,7 +5,7 @@
 
 ## Pre-requisites
 
-This project ia built and tested with the following dependencies:
+This project is built and tested with the following dependencies:
 
 * JAVA JDK 17.0.2
 * MAVEN 3.9.2
@@ -16,9 +16,6 @@ This project ia built and tested with the following dependencies:
   * Android SDK and commandline tools
   * Android Emulator
     * Pixel 5 with Android 13.0 Google Play | x86_64
-
-> Use appium doctor to check if your system has been successfully setup with appium
-
 
 ## Libraries
 
@@ -31,6 +28,16 @@ This project ia built and tested with the following dependencies:
 * [Owner](https://github.com/matteobaccan/owner) to minimize the code to handle properties files
 * [Lombok](https://projectlombok.org/) to reduce the boilerplate and creating POJOs with builder pattern
 * [jackson-databind](https://github.com/FasterXML/jackson-databind) to parse the JSON test data
+
+## Installation
+
+* Check the following resources on how to setup Appium 2.0:
+  * [Machine setup for Appium 2.0: Mastering Appium 2.0](https://www.youtube.com/watch?v=wT2iiAUQ5BA)
+  * [Beginner’s Guide to Appium 2.0](https://medium.com/@iamfaisalkhatri/beginners-guide-to-appium-2-0-d8118b31837c)
+
+> Use [appium doctor](https://github.com/appium/appium/tree/master/packages/doctor) to check if your system has been successfully setup with appium
+
+> Run the command appium-doctor to verify the setup (Xcode is not required for this task)
 
 ## Running Tests
 
